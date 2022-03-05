@@ -1,6 +1,12 @@
+let cardBack;
+function preload(){
+  cardBack = loadImage("Graphics/card.jpg");
+  
+}
 function setup() {
   createCanvas(400, 400);
 }
+
 
 function draw() {
   background(220);
