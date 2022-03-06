@@ -2,7 +2,7 @@
 let cardBack;
 let bg;
 let cards = [];
-let imageName = ['apple.webp', 'banana.webp', 'cat.png', 'dog.png', 'orange.jpg', 'pear.png']
+let imageName = ['apple.png', 'banana.png', 'cat.png', 'dog.png', 'orange.jpg', 'pear.png']
 let images = []
 
 

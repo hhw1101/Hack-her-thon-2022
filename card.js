@@ -10,12 +10,12 @@ class Card {
     clicked(px, py) {
         if (px > this.x && px < this.x + this.w && py > this.y && py < this.y + this.h) {
             console.log('clicked')
-            this.show()
+            image(images[0], this.x, this.y, this.w, this.h)
         }
     }
 
-    flip(x, y) {
-
+    showFront() {
+        image(this.object, this.x, this.y, this.w, this.h)
 
     }
 
@@ -25,7 +25,8 @@ class Card {
         }
     }
 
-    show() {
-        image(this.object, this.x, this.y, this.w, this.h)
+    showBack() {
+        image(cardBack, this.x, this.y, this.w, this.h)
     }
+
 }
