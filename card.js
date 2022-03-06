@@ -8,15 +8,14 @@ class Card {
         this.name = word;
     }
     clicked(px, py) {
-        if (px > this.x && px < this.x + this.w && py > this.y && py > this.y + this.h) {
-            this.flip();
+        if (px > this.x && px < this.x + this.w && py > this.y && py < this.y + this.h) {
             console.log('clicked')
+            this.show()
         }
-        // if (dist(this.x, this.y, mouseX, mouseY) < this.r && this.brightness == 0) {
-        //     //console.log('clicked on bubble');
-        //     this.brightness = 255;
     }
+
     flip(x, y) {
+
 
     }
 
@@ -27,6 +26,6 @@ class Card {
     }
 
     show() {
-        image(cardBack, this.x, this.y, this.w, this.h)
+        image(this.object, this.x, this.y, this.w, this.h)
     }
 }

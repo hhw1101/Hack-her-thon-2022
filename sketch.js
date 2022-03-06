@@ -36,7 +36,7 @@ function setup() {
 
 function draw() {
   for (let i = 0; i < cards.length; i++) {
-    cards[i].show();
+    cards[i].showBack();
 
   }
   // card0.show()
@@ -48,11 +48,11 @@ function windowResized() {
   // does not seem to be doing what I think it is meant to do
 }
 function mousePressed() {
-  if (mouseX > cards.x && mouseX < cards.x + cardWidth && mouseY > cards.y && mouseY < cards.y + cardHeight && mouseIsPressed) {
-    cards.flip(mouseX, mouseY)
-  }
+  // if (mouseX > cards.x && mouseX < cards.x + cardWidth && mouseY > cards.y && mouseY < cards.y + cardHeight && mouseIsPressed) {
+  //   cards.flip(mouseX, mouseY)
+  // }
   for (let i of cards) {
-    i.clicked();
+    i.clicked(mouseX, mouseY);
     //i.rollover(mouseX,mouseY); //i.clicked(mouseX,mouseY);
   }
 
