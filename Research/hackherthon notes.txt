@@ -20,3 +20,8 @@ g-research best accessibility hack
 enterpreneurial potiential
 
 image recognition software
+very out there idea
+use image recognition to identify objects, then using the objects teach kids the name of these objects through snap.
+They will have to snap the word and the image together. 
+One idea is to start with common objects and words and then including counting. 
+
