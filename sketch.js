@@ -10,9 +10,12 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   // image(cardBack, 0, 0, 13,5);
-  let a = new Card(100, 100, 50, 40);
-  a.show()
-  cards[0] = new Card();
+  let cardWidth = windowWidth / 5
+  let cardHeight = floor(windowHeight / 2.5)
+  for (let i = 0; i < 5; i++) {
+    cards[i] = new Card(i * cardWidth + 10, cardHeight / 2, cardWidth, cardHeight);
+
+  }
 }
 
 function windowResized() {
@@ -21,7 +24,11 @@ function windowResized() {
 
 function draw() {
   background(220);
-  card0.show()
+  for (let i = 0; i < 5; i++) {
+    cards[i].show();
+
+  }
+  // card0.show()
   // circle(100, 100, 100);
 }
 
