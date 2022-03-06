@@ -9,13 +9,13 @@ class Card {
     }
     clicked(px, py) {
         if (px > this.x && px < this.x + this.w && py > this.y && py < this.y + this.h) {
-            console.log('clicked')
-            image(images[0], this.x, this.y, this.w, this.h)
+            console.log('clicked');
+            this.showFront();
         }
     }
 
     showFront() {
-        image(this.object, this.x, this.y, this.w, this.h)
+        blend(images[0], this.x, this.y, this.w, this.h, this.x, this.y, this.w, this.h, REPLACE);
 
     }
 
@@ -26,7 +26,7 @@ class Card {
     }
 
     showBack() {
-        image(cardBack, this.x, this.y, this.w, this.h)
+        image(cardBack, this.x, this.y, this.w, this.h);
     }
 
 }
