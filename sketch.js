@@ -3,10 +3,10 @@ function preload() {
   cardBack = loadImage("Graphics/cardbacking.png");
 
 }
+
 function setup() {
   createCanvas(400, 400);
-
-  Image(cardBack, 0, 0);
+  // Image(cardBack, 0, 0, 13, 15);
 }
 
 
