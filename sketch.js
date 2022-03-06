@@ -8,13 +8,16 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
-  // image(cardBack, 0, 0, 13, 15);
+  createCanvas(windowWidth, windowHeight);
+  // image(cardBack, 0, 0, 13,5);
   let a = new Card(100, 100, 50, 40);
   a.show()
   cards[0] = new Card();
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function draw() {
   background(220);
